@@ -210,6 +210,31 @@
       width: 10px; height: 10px; border-radius: 50%;
     }
 
+    /* Photo gallery */
+    .lp-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+    @media (max-width: 640px) {
+      .lp-gallery { grid-template-columns: 1fr; gap: 12px; }
+    }
+    .lp-gallery-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      border: 1px solid var(--surface-3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .lp-gallery-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(99,102,241,0.15);
+    }
+    .lp-gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+
     /* Similar creators */
     .lp-similar-grid {
       display: grid;
@@ -281,9 +306,8 @@
 <!-- ===== HERO PROFILE ===== -->
 <section class="lp-hero">
   <div class="container">
-    <!-- Avatar — placeholder gradient until photo is added -->
     <div class="lp-avatar-wrap" id="lpAvatar">
-      <div class="lp-avatar-letter">L</div>
+      <img src="img/lyra-1.jpeg" alt="Lyra Saint-Clair" loading="eager">
     </div>
 
     <div class="lp-rank-badge">👑 #1 Top Creator — April 2026</div>
@@ -421,6 +445,20 @@
             </div>
           </li>
         </ul>
+
+        <!-- Photo Gallery -->
+        <h2 style="margin-top:40px;">Photos</h2>
+        <div class="lp-gallery">
+          <div class="lp-gallery-item">
+            <img src="img/lyra-1.jpeg" alt="Lyra Saint-Clair — private jet lifestyle" loading="lazy">
+          </div>
+          <div class="lp-gallery-item">
+            <img src="img/lyra-2.jpeg" alt="Lyra Saint-Clair — fashion editorial" loading="lazy">
+          </div>
+          <div class="lp-gallery-item">
+            <img src="img/lyra-3.jpeg" alt="Lyra Saint-Clair — New York City" loading="lazy">
+          </div>
+        </div>
 
         <!-- Inline CTA -->
         <div class="lp-inline-cta">
