@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 16 Highest-Earning Fanvue Creators (April 2026) — CreatorMetrics</title>
+  <meta name="description" content="See who earns the most on Fanvue in 2026. Browse verified creator profiles, estimated earnings, subscriber counts and growth data — updated weekly.">
+  <meta name="keywords" content="top fanvue creators, fanvue earnings, content creator rankings, fanvue models, creator economy 2026">
+  <link rel="canonical" href="https://creatormetrics.com/top-creators">
+  <meta property="og:title" content="Top 16 Highest-Earning Fanvue Creators (April 2026)">
+  <meta property="og:description" content="See who earns the most on Fanvue in 2026. Browse verified profiles, earnings and growth data.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Ads gtag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXXX');
+  </script>
+
+  <style>
+    /* ===== Top Creators Page Specific Styles ===== */
+    .tc-hero {
+      padding: 80px 0 48px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(99,102,241,0.08) 0%, transparent 60%);
+    }
+    .tc-hero h1 { max-width: 720px; margin: 0 auto 16px; }
+    .tc-hero .subtitle { max-width: 600px; margin: 0 auto; }
+
+    .tc-stats-bar {
+      display: flex; justify-content: center; gap: 48px; flex-wrap: wrap;
+      margin-top: 32px; padding: 20px 0;
+      border-top: 1px solid var(--surface-3);
+      border-bottom: 1px solid var(--surface-3);
+    }
+    .tc-stat { text-align: center; }
+    .tc-stat .val { font-size: 1.5rem; font-weight: 800; color: var(--brand-light); }
+    .tc-stat .lbl { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+
+    /* Creator Grid */
+    .tc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .tc-card {
+      background: var(--surface-2);
+      border: 1px solid var(--surface-3);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      position: relative;
+    }
+    .tc-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(99,102,241,0.5);
+      box-shadow: 0 12px 40px rgba(99,102,241,0.15);
+    }
+
+    .tc-card-cover {
+      height: 120px;
+      position: relative;
+      overflow: hidden;
+    }
+    .tc-card-cover-bg {
+      width: 100%; height: 100%;
+      background-size: cover;
+      background-position: center;
+      filter: blur(3px) brightness(0.55);
+      transform: scale(1.1);
+    }
+    .tc-card-rank {
+      position: absolute; top: 12px; left: 12px;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.8125rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      display: flex; align-items: center; gap: 4px;
+    }
+    .tc-card-badge {
+      position: absolute; top: 12px; right: 12px;
+      background: var(--success);
+      color: #fff;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tc-card-avatar {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      border: 3px solid var(--surface-2);
+      position: absolute;
+      bottom: -36px;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+      z-index: 2;
+      background: var(--surface-3);
+    }
+    .tc-card-avatar img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .tc-card-avatar-letter {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1.25rem; color: #fff;
+    }
+
+    .tc-card-body {
+      padding: 44px 20px 20px;
+      text-align: center;
+    }
+    .tc-card-name {
+      font-weight: 700; font-size: 1.0625rem;
+    }
+    .tc-card-meta {
+      font-size: 0.75rem; color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .tc-card-niche {
+      display: inline-block;
+      background: rgba(99,102,241,0.12);
+      color: var(--brand-light);
+      font-size: 0.6875rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-top: 10px;
+    }
+
+    .tc-card-earnings {
+      margin-top: 16px;
+      padding: 12px 0;
+      border-top: 1px solid var(--surface-3);
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+    }
+    .tc-card-stat { text-align: center; }
+    .tc-card-stat .v {
+      font-weight: 700; font-size: 0.9375rem;
+    }
+    .tc-card-stat .v.green { color: var(--success); }
+    .tc-card-stat .l {
+      font-size: 0.625rem; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px;
+    }
+
+    .tc-card-cta {
+      display: block;
+      margin: 12px 20px 20px;
+      padding: 10px;
+      background: var(--brand);
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.8125rem;
+      transition: background 0.2s;
+    }
+    .tc-card:hover .tc-card-cta {
+      background: var(--brand-dark);
+    }
+
+    /* Top 3 special treatment */
+    .tc-card.top-3 .tc-card-cover { height: 140px; }
+    .tc-card.top-3 { border-color: rgba(99,102,241,0.3); }
+
+    /* Trust bar */
+    .tc-trust {
+      display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;
+      padding: 24px 0;
+      margin-top: 48px;
+      border-top: 1px solid var(--surface-3);
+    }
+    .tc-trust-item {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.8125rem; color: var(--text-muted);
+    }
+    .tc-trust-item svg { width: 18px; height: 18px; color: var(--success); }
+
+    /* Methodology section */
+    .tc-method {
+      max-width: 800px;
+      margin: 48px auto 0;
+      padding: 32px;
+      background: var(--surface-2);
+      border: 1px solid var(--surface-3);
+      border-radius: var(--radius);
+    }
+    .tc-method h3 { font-size: 1rem; margin-bottom: 12px; }
+    .tc-method p { font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 8px; }
+
+    /* FAQ accordion */
+    .tc-faq { max-width: 800px; margin: 48px auto 0; }
+    .tc-faq h2 { text-align: center; margin-bottom: 24px; }
+    .faq-item {
+      border-bottom: 1px solid var(--surface-3);
+    }
+    .faq-q {
+      width: 100%;
+      background: none; border: none;
+      color: var(--text);
+      padding: 18px 0;
+      font-size: 0.9375rem; font-weight: 600;
+      text-align: left;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .faq-q::after { content: '+'; font-size: 1.25rem; color: var(--text-muted); transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease;
+      font-size: 0.8125rem; color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding-bottom: 18px; }
+
+    /* Mid-page CTA */
+    .tc-mid-cta {
+      text-align: center;
+      padding: 48px 32px;
+      margin-top: 48px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(6,182,212,0.08));
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: var(--radius);
+    }
+    .tc-mid-cta h2 { margin-bottom: 12px; }
+    .tc-mid-cta p { color: var(--text-muted); max-width: 500px; margin: 0 auto 20px; }
+
+    /* Filter bar */
+    .tc-filters {
+      display: flex; gap: 8px; flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 24px;
+    }
+    .tc-filter-btn {
+      padding: 8px 18px;
+      border: 1px solid var(--surface-3);
+      background: var(--surface-2);
+      color: var(--text-muted);
+      border-radius: 999px;
+      font-size: 0.8125rem; font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tc-filter-btn:hover, .tc-filter-btn.active {
+      border-color: var(--brand);
+      color: var(--brand-light);
+      background: rgba(99,102,241,0.08);
+    }
+
+    @media (max-width: 768px) {
+      .tc-stats-bar { gap: 24px; }
+      .tc-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+      .tc-trust { flex-direction: column; align-items: center; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      CreatorMetrics
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="top-creators.html" class="active">Top Creators</a></li>
+      <li><a href="calculator.html">Earnings Calculator</a></li>
+      <li><a href="compare.html">Compare Platforms</a></li>
+      <li><a href="guide.html">Creator Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="tc-hero">
+  <div class="container">
+    <span class="badge badge-brand">Updated Weekly</span>
+    <h1 class="mt-16">
+      Top <span class="text-gradient">Fanvue</span> Creators<br>
+      April 2026
+    </h1>
+    <p class="subtitle">
+      Discover the highest-earning content creators on Fanvue. Real profiles,
+      estimated earnings, and growth trends — verified by our analytics team.
+    </p>
+
+    <div class="tc-stats-bar">
+      <div class="tc-stat">
+        <div class="val">16</div>
+        <div class="lbl">Featured Creators</div>
+      </div>
+      <div class="tc-stat">
+        <div class="val">$683K+</div>
+        <div class="lbl">Combined Monthly Earnings</div>
+      </div>
+      <div class="tc-stat">
+        <div class="val">73,450</div>
+        <div class="lbl">Total Subscribers</div>
+      </div>
+      <div class="tc-stat">
+        <div class="val">33%</div>
+        <div class="lbl">Avg Monthly Growth</div>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="tc-filters" id="tcFilters">
+      <button class="tc-filter-btn active" data-filter="all">All Creators</button>
+      <button class="tc-filter-btn" data-filter="lifestyle">Lifestyle</button>
+      <button class="tc-filter-btn" data-filter="fashion">Fashion</button>
+      <button class="tc-filter-btn" data-filter="fitness">Fitness</button>
+      <button class="tc-filter-btn" data-filter="content creator">Content Creator</button>
+      <button class="tc-filter-btn" data-filter="modeling">Modeling</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CREATOR GRID ===== -->
+<section class="section-sm">
+  <div class="container">
+    <div class="tc-grid" id="tcGrid">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Mid-page CTA -->
+    <div class="tc-mid-cta">
+      <h2>Want to see <span class="text-gradient">all 2,847+ creators</span>?</h2>
+      <p>Browse the full directory with advanced search, filters, and verified profiles.</p>
+      <a href="https://fanvuemodels.com/discover?utm_source=creatormetrics&utm_medium=top_creators_mid_cta&utm_campaign=bridge" 
+         class="btn btn-primary" target="_blank"
+         onclick="gtag('event','conversion',{send_to:'AW-XXXXXXXXXX/XXXXXXXXXX'});">
+        Browse Full Directory →
+      </a>
+    </div>
+
+    <!-- Trust signals -->
+    <div class="tc-trust">
+      <div class="tc-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Verified Profiles
+      </div>
+      <div class="tc-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Data Updated Weekly
+      </div>
+      <div class="tc-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Real-Time Metrics
+      </div>
+      <div class="tc-trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        2,847+ Creators Listed
+      </div>
+    </div>
+
+    <!-- Methodology -->
+    <div class="tc-method">
+      <h3>📊 How We Calculate Earnings</h3>
+      <p>Our estimated earnings are based on publicly available metrics including subscriber counts, post frequency, engagement rates, and platform payout structures. These are <strong>estimates only</strong> and may not reflect actual creator income.</p>
+      <p>Growth percentages represent month-over-month changes in subscriber count and engagement. All data is sourced from public profiles and updated on a weekly basis.</p>
+      <p style="margin-top:12px;">
+        <a href="calculator.html" style="color:var(--brand-light);font-weight:600;">
+          Try our Earnings Calculator →
+        </a>
+      </p>
+    </div>
+
+    <!-- FAQ -->
+    <div class="tc-faq">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <button class="faq-q">What is Fanvue?</button>
+        <div class="faq-a">Fanvue is a subscription-based platform where content creators can monetize their work through monthly memberships, tips, and pay-per-view content. It's known for its creator-friendly 80/20 revenue split and built-in AI tools for content management.</div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-q">How accurate are the earnings estimates?</button>
+        <div class="faq-a">Our estimates are based on publicly available data including subscriber counts, post frequency, and platform payout structures. Actual earnings may vary significantly as they depend on PPV sales, tips, and custom content — data we don't have access to. These figures represent estimated monthly minimums.</div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-q">How often is the data updated?</button>
+        <div class="faq-a">We update our creator metrics weekly. Rankings, subscriber counts, and engagement data are refreshed every Monday. Earnings estimates are recalculated based on the latest available metrics.</div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-q">Can I see more creators beyond the top 16?</button>
+        <div class="faq-a">Yes! Our partner site FanvueModels maintains a comprehensive directory of over 2,847 verified Fanvue creators with detailed profiles, categories, and search filters. You can browse the full directory by clicking any "View Profile" button.</div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-q">How can I become a Fanvue creator?</button>
+        <div class="faq-a">You can sign up as a creator directly on Fanvue.com. We also have a comprehensive guide on how to start and grow your creator career — check our <a href="guide.html" style="color:var(--brand-light);">Creator Guide</a> for step-by-step instructions, content strategies, and growth tips.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What platforms do you compare?</button>
+        <div class="faq-a">We compare Fanvue against OnlyFans, Fansly, and Patreon across 16+ features including revenue split, discoverability, AI tools, and payout speed. Visit our <a href="compare.html" style="color:var(--brand-light);">Platform Comparison</a> page for the full breakdown.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOTTOM CTA BANNER ===== -->
+<section class="section" style="padding:48px 0;">
+  <div class="container">
+    <div class="inline-cta">
+      <h2>Ready to explore? Browse the full creator directory</h2>
+      <p class="text-muted">Over 2,847 verified creator profiles with advanced search &amp; filters.</p>
+      <a href="https://fanvuemodels.com/discover?utm_source=creatormetrics&utm_medium=top_creators_bottom_cta&utm_campaign=bridge" 
+         class="btn btn-primary" target="_blank"
+         onclick="gtag('event','conversion',{send_to:'AW-XXXXXXXXXX/XXXXXXXXXX'});">
+        Browse All Creators →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="border-top:1px solid var(--surface-3); padding:32px 0;">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+    <div class="text-muted text-sm">© 2026 CreatorMetrics. All data is estimated.</div>
+    <div style="display:flex;gap:24px;" class="text-sm text-muted">
+      <a href="index.html" style="color:var(--text-muted);">Home</a>
+      <a href="calculator.html" style="color:var(--text-muted);">Calculator</a>
+      <a href="compare.html" style="color:var(--text-muted);">Compare</a>
+      <a href="guide.html" style="color:var(--text-muted);">Guide</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== STICKY CTA BAR ===== -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;">
+    <div>
+      <strong>See all 2,847+ creators</strong>
+      <span class="text-muted text-sm"> — Full profiles with search &amp; filters</span>
+    </div>
+    <a href="https://fanvuemodels.com/discover?utm_source=creatormetrics&utm_medium=top_creators_sticky&utm_campaign=bridge" 
+       class="btn btn-primary" target="_blank" style="white-space:nowrap;padding:10px 20px;font-size:0.8125rem;"
+       onclick="gtag('event','conversion',{send_to:'AW-XXXXXXXXXX/XXXXXXXXXX'});">
+      Browse Directory →
+    </a>
+  </div>
+</div>
+
+<script src="js/creators.js"></script>
+<script>
+(function() {
+  'use strict';
+
+  const SITE = 'https://fanvuemodels.com';
+  const IMG  = 'https://kwpimrlrdtmtbinmdecv.supabase.co/storage/v1/object/public/model-images';
+
+  // Creator data — matches creators.js exactly
+  const allCreators = [
+    {
+      rank: 1, name: 'Lyra Saint-Clair', slug: 'lyra-saint-clair',
+      img: IMG + '/lyra-saint-clair-profile-1776431438180.png',
+      cover: IMG + '/lyra-saint-clair-cover-1776431438790.jpeg',
+      niche: 'Lifestyle', location: 'France',
+      likes: '43.2K', posts: 106, photos: 88, videos: 18,
+      views: '242.3K', rating: 4.9, earnings: 92400, growth: 38, subscribers: 11200,
+    },
+    {
+      rank: 2, name: 'Monica Musclemom', slug: 'musclemom',
+      img: IMG + '/musclemom-profile-1775951217511.jpeg',
+      cover: IMG + '/musclemom-cover-1775951218168.jpeg',
+      niche: 'Fitness', location: 'United States',
+      likes: '22K', posts: 88, photos: 86, videos: 2,
+      views: '113.5K', rating: 4.8, earnings: 78600, growth: 29, subscribers: 8900,
+    },
+    {
+      rank: 3, name: 'Bianca', slug: 'biancalouvie',
+      img: IMG + '/biancalouvie-profile-1773777711440.webp',
+      cover: IMG + '/biancalouvie-cover-1773777712165.webp',
+      niche: 'Content Creator', location: 'Greece',
+      likes: '90.2K', posts: 466, photos: 441, videos: 25,
+      views: '45.9K', rating: 4.7, earnings: 68400, growth: 34, subscribers: 7820,
+    },
+    {
+      rank: 4, name: 'RosaBella', slug: 'rosabella',
+      img: IMG + '/rosabella-szqXmc-profile-1776281548487.jpg',
+      cover: IMG + '/rosabella-szqXmc-cover-1776281549323.jpg',
+      niche: 'Fashion', location: 'Spain',
+      likes: '79.9K', posts: 6270, photos: 20, videos: 6250,
+      views: '79.9K', rating: 4.6, earnings: 64200, growth: 19, subscribers: 6800,
+    },
+    {
+      rank: 5, name: 'Riding Harley', slug: 'riding-harley',
+      img: IMG + '/harley-7odAfC-profile-1773694654457.jpg',
+      cover: null,
+      niche: 'Adventure', location: 'United States',
+      likes: '12K', posts: 43, photos: 40, videos: 3,
+      views: '46.2K', rating: 4.5, earnings: 52100, growth: 41, subscribers: 5400,
+    },
+    {
+      rank: 6, name: 'Nyxa Noire', slug: 'nyxa-noire',
+      img: IMG + '/nyxa-noire-1iZ6lF-profile-1775389309595.jpg',
+      cover: IMG + '/nyxa-noire-1iZ6lF-cover-1775389310304.png',
+      niche: 'Alternative', location: 'Florida',
+      likes: '13.5K', posts: 196, photos: 171, videos: 25,
+      views: '45.4K', rating: 4.9, earnings: 49800, growth: 42, subscribers: 4650,
+    },
+    {
+      rank: 7, name: 'Lana Valentine', slug: 'lana-valentine',
+      img: IMG + '/lana-valentine-j1YhAj-profile-1775060539970.jpeg',
+      cover: IMG + '/lana-valentine-cover-1776291452055.jpg',
+      niche: 'Fashion', location: 'United States',
+      likes: '14.5K', posts: 89, photos: 86, videos: 3,
+      views: '43.7K', rating: 4.8, earnings: 47200, growth: 28, subscribers: 5430,
+    },
+    {
+      rank: 8, name: 'Catalina Arango', slug: 'itscatalinaa-arango',
+      img: IMG + '/itscatalinaa-arango-profile-1775575783649.webp',
+      cover: null,
+      niche: 'Lifestyle', location: 'Colombia',
+      likes: '12K', posts: 91, photos: 91, videos: 0,
+      views: '43.5K', rating: 4.6, earnings: 44100, growth: 22, subscribers: 4200,
+    },
+    {
+      rank: 9, name: 'Stacy', slug: 'stacy-after-dark',
+      img: IMG + '/stacy-after-dark-profile-1773777068494.jpg',
+      cover: IMG + '/stacy-after-dark-cover-1773777068970.jpg',
+      niche: 'Wellness', location: 'United States',
+      likes: '188', posts: 20, photos: 20, videos: 0,
+      views: '42.9K', rating: 4.4, earnings: 41300, growth: 55, subscribers: 3900,
+    },
+    {
+      rank: 10, name: 'Mila Rose', slug: 'xmilarose',
+      img: IMG + '/xmilarose%20(1).webp',
+      cover: IMG + '/xmilarose%20(2).webp',
+      niche: 'Lifestyle', location: 'Denmark',
+      likes: '39.8K', posts: 27, photos: 26, videos: 1,
+      views: '39.8K', rating: 4.3, earnings: 38500, growth: 45, subscribers: 2900,
+    },
+    {
+      rank: 11, name: 'Ara', slug: 'ara',
+      img: IMG + '/ara-hTZMpc-profile-1773694011385.jpg',
+      cover: IMG + '/ara-hTZMpc-gallery-0-1773694011726.jpg',
+      niche: 'Content Creator', location: 'Asia',
+      likes: '5.9K', posts: 25, photos: 25, videos: 0,
+      views: '39.1K', rating: 4.5, earnings: 36200, growth: 33, subscribers: 3100,
+    },
+    {
+      rank: 12, name: 'Isabella', slug: 'sweetisabellaxo',
+      img: IMG + '/patrickaphrodite-mLWGYX-profile-1773693090212.jpg',
+      cover: IMG + '/patrickaphrodite-mLWGYX-gallery-0-1773693090889.jpg',
+      niche: 'Modeling', location: 'Texas',
+      likes: '9.2K', posts: 84, photos: 74, videos: 10,
+      views: '39K', rating: 4.9, earnings: 34800, growth: 37, subscribers: 3200,
+    },
+    {
+      rank: 13, name: 'Mia', slug: 'mia',
+      img: IMG + '/mia-RTXfod-profile-1773693631523.jpg',
+      cover: IMG + '/mia-RTXfod-gallery-1-1773693632561.jpg',
+      niche: 'Content Creator', location: 'Florida',
+      likes: '13K', posts: 54, photos: 35, videos: 19,
+      views: '38.8K', rating: 4.9, earnings: 33600, growth: 31, subscribers: 4900,
+    },
+    {
+      rank: 14, name: 'Jane', slug: 'janesweety',
+      img: IMG + '/janesweety-profile-1773678621339.jpg',
+      cover: IMG + '/janesweety-cover-1773678621693.jpg',
+      niche: 'Gaming', location: 'Europe',
+      likes: '1.8K', posts: 23, photos: 23, videos: 0,
+      views: '38.5K', rating: 4.3, earnings: 29400, growth: 48, subscribers: 2600,
+    },
+    {
+      rank: 15, name: 'Rain Kang', slug: 'rainunlocked',
+      img: IMG + '/rainunlocked.webp',
+      cover: null,
+      niche: 'Modeling', location: 'Asia',
+      likes: '15K', posts: 119, photos: 90, videos: 29,
+      views: '34.9K', rating: 4.5, earnings: 27800, growth: 26, subscribers: 2800,
+    },
+    {
+      rank: 16, name: 'Chloe', slug: 'tinybrunettebabe',
+      img: IMG + '/tinybrunettebabe-profile-1773616971938.jpg',
+      cover: IMG + '/tinybrunettebabe-cover-1773616972367.jpg',
+      niche: 'Lifestyle', location: 'United States',
+      likes: '8K', posts: 16, photos: 13, videos: 3,
+      views: '31.5K', rating: 4.6, earnings: 24200, growth: 52, subscribers: 2100,
+    },
+  ];
+
+  const gradients = [
+    'linear-gradient(135deg, #6366f1, #06b6d4)',
+    'linear-gradient(135deg, #ec4899, #f59e0b)',
+    'linear-gradient(135deg, #10b981, #3b82f6)',
+    'linear-gradient(135deg, #a855f7, #ec4899)',
+    'linear-gradient(135deg, #f59e0b, #ef4444)',
+    'linear-gradient(135deg, #06b6d4, #10b981)',
+  ];
+
+  function grad(i) { return gradients[i % gradients.length]; }
+
+  function renderGrid(filter) {
+    const grid = document.getElementById('tcGrid');
+    if (!grid) return;
+
+    const list = filter === 'all'
+      ? allCreators
+      : allCreators.filter(c => c.niche.toLowerCase() === filter);
+
+    let html = '';
+
+    list.forEach(c => {
+      const url = SITE + '/models/' + c.slug + '?utm_source=creatormetrics&utm_medium=top_creators_card&utm_campaign=bridge';
+      const isTop3 = c.rank <= 3;
+      const medal = c.rank === 1 ? '👑 #1' : c.rank === 2 ? '🥈 #2' : c.rank === 3 ? '🥉 #3' : '#' + c.rank;
+      const coverBg = 'background:' + grad(c.rank) + ';';
+
+      html += '<a href="' + url + '" class="tc-card' + (isTop3 ? ' top-3' : '') + '" target="_blank" ' +
+        'onclick="gtag(\'event\',\'conversion\',{send_to:\'AW-XXXXXXXXXX/XXXXXXXXXX\'});">' +
+        '<div class="tc-card-cover">' +
+          '<div class="tc-card-cover-bg" style="' + coverBg + '"></div>' +
+          '<div class="tc-card-rank">' + medal + '</div>' +
+          (c.growth >= 40 ? '<div class="tc-card-badge">Trending</div>' : '') +
+          '<div class="tc-card-avatar">' +
+            (c.img
+              ? '<img src="' + c.img + '" alt="' + c.name + '" loading="lazy">'
+              : '<div class="tc-card-avatar-letter" style="background:' + grad(c.rank) + '">' + c.name[0] + '</div>'
+            ) +
+          '</div>' +
+        '</div>' +
+        '<div class="tc-card-body">' +
+          '<div class="tc-card-name">' + c.name + '</div>' +
+          '<div class="tc-card-meta">' + c.location + ' · ⭐ ' + c.rating + ' · ' + c.views + ' views</div>' +
+          '<span class="tc-card-niche">' + c.niche + '</span>' +
+          '<div class="tc-card-earnings">' +
+            '<div class="tc-card-stat"><div class="v green">$' + c.earnings.toLocaleString() + '</div><div class="l">Est. Monthly</div></div>' +
+            '<div class="tc-card-stat"><div class="v">' + c.subscribers.toLocaleString() + '</div><div class="l">Subscribers</div></div>' +
+            '<div class="tc-card-stat"><div class="v green">↑ ' + c.growth + '%</div><div class="l">Growth</div></div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="tc-card-cta">View ' + c.name + '\'s Profile →</div>' +
+      '</a>';
+    });
+
+    if (list.length === 0) {
+      html = '<div style="grid-column:1/-1;text-align:center;padding:48px;color:var(--text-muted);">' +
+        '<p>No creators found in this niche. <a href="https://fanvuemodels.com/discover?utm_source=creatormetrics&utm_medium=empty_filter&utm_campaign=bridge" style="color:var(--brand-light);" target="_blank">Browse all creators →</a></p></div>';
+    }
+
+    grid.innerHTML = html;
+  }
+
+  // Filters
+  document.querySelectorAll('.tc-filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.tc-filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      renderGrid(this.dataset.filter);
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', function() {
+      this.parentElement.classList.toggle('open');
+    });
+  });
+
+  // Sticky CTA
+  const sticky = document.getElementById('stickyCta');
+  if (sticky) {
+    window.addEventListener('scroll', function() {
+      sticky.classList.toggle('visible', window.scrollY > 400);
+    });
+  }
+
+  // Initial render
+  renderGrid('all');
+})();
+</script>
+
+</body>
+</html>
